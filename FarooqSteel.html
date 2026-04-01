@@ -1,0 +1,186 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farooq Steel</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 22px;
+    color: #f4b400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1581091870622-3f2c52c47f8e');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    padding: 60px 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+/* About */
+.about p {
+    max-width: 900px;
+}
+
+/* Contact */
+.contact a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact a:hover {
+    background: #1ebe5d;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h1>Farooq Steel</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#address">Address</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div>
+        <h2>Quality Steel Solutions</h2>
+        <p>Trusted for over 62 years</p>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        At Farooq Steel, we are committed to providing top-quality steel products and services to our customers. 
+        With over 62 years of experience in the industry, our team of skilled professionals has the expertise and 
+        knowledge to deliver the best solutions for your steel needs. Whether you are looking for round, square, 
+        or MS pipes, we have the resources and capabilities to get the job done right. Our state-of-the-art 
+        manufacturing facility and advanced production techniques allow us to offer a wide range of shapes and 
+        sizes to meet your specific needs. Trust us to provide the highest level of customer service and the most 
+        reliable steel products on the market. Contact us today to see how Farooq Steel can meet all of your steel needs.
+    </p>
+</section>
+
+<!-- Address -->
+<section id="address">
+    <h2>Our Location</h2>
+    <p>
+        Asif Town, Sialkot Bypass, Sialkot Road<br>
+        Near Malik Farooq Kanta, Gujranwala
+    </p>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Click below to chat with us on WhatsApp:</p>
+    <a href="https://wa.me/923006444410" target="_blank">
+        Chat on WhatsApp
+    </a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Farooq Steel. All Rights Reserved.</p>
+</footer>
+
+<script>
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+    });
+});
+</script>
+
+</body>
+</html>
